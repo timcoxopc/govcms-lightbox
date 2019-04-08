@@ -1,0 +1,9 @@
+lightbox:
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js: {}
+  css:
+    theme:
+      https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css: {}
+      css/gallery.css: {}
+  dependencies:
+    - core/jquery

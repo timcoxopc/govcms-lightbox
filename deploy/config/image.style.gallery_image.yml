@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: gallery_image
+label: 'Gallery Image'
+effects:
+  0f8da5db-a88a-42fe-b9dc-13c98e85f2cc:
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 280
+      height: 280
+      anchor: center-center
