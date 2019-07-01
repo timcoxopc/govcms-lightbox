@@ -57,16 +57,20 @@
   {% if multiple %}
     <div{{ attributes.addClass(classes, 'field--items') }}>
       {% for item in items %}
-        <a href="{{ file_url(item.content['#item'].entity.uri.value) }}" data-lightbox="album">
-          <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
-        </a>
+        <div class="gallery--image-wrapper">
+          <a href="{{ file_url(item.content['#item'].entity.uri.value) }}" data-lightbox="album">
+            <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
+          </a>
+        </div>
       {% endfor %}
     </div>
   {% else %}
     {% for item in items %}
-      <a href="{{ file_url(item.content['#item'].entity.uri.value) }}" data-lightbox="album">
-        <div{{ attributes.addClass(classes, 'field--item') }}>{{ item.content }}</div>
-      </a>
+      <div class="gallery--image-wrapper">
+        <a href="{{ file_url(item.content['#item'].entity.uri.value) }}" data-lightbox="album">
+          <div{{ attributes.addClass(classes, 'field--item') }}>{{ item.content }}</div>
+        </a>
+      </div>
     {% endfor %}
   {% endif %}
 {% else %}
